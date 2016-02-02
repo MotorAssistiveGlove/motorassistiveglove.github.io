@@ -1,0 +1,83 @@
+body{
+	width: 100%;
+	font-size: 18px;
+}
+p{
+ text-align: justify;
+}
+.jumbotron{
+	background-color: #505050;
+	color: #ffe680;
+	padding: 100px 25px;
+}
+
+.jumbotron img{
+	height: 360px;
+}
+.bg-gold{
+	background-color: #fff5cc;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+.profile-img{
+	text-align: center;
+	width: 50%;
+}
+
+.bio{
+	text-align: justify;
+}
+.profile{
+	text-align: center;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #505050;
+    z-index: 9999;
+    border: 0;
+    font-size: 16px !important;
+    line-height: 1.42857143 !important;
+    /*letter-spacing: 4px;*/
+    border-radius: 0;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff5cc !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #ffe680 !important;
+    background-color: #A0A0A0 !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+.navbar-brand .glyphicon{
+	font-size: 10px;
+	bottom-margin: 5px;
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: gold;
+}
+footer{
+	font-size: 10px;
+}
+.btn{
+	color:black;
+}
+.btn:hover{
+	background-color: #A0A0A0;
+}
+.dropdown-menu{
+	background-color: #A0A0A0;
+}
+
+video{
+	width: 100%;
+}

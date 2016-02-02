@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="0">
+    	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    	<title>MAG Project</title>
+    	<link rel="icon" href="img/MAG_icon.png">
+
+
+    	<!-- Bootstrap -->
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="js/bootstrap.min.js"></script> 
+	    <script type="text/javascript">
+	    	$(document).ready(function(){
+		    	$(".navbar-brand").on('click', function(){
+		    		window.location.href = "index.html";
+		    	});
+		    });
+	    </script>
+	    <script type="text/javascript" src="js/scrolling.js"></script>
+
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+  	</head>
+  	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+		    <div class="navbar-header">
+		    	<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-chevron-left"></span>MAG</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dates<span class="caret"></span></a></a>
+		  		<ul class="dropdown-menu">
+		  			<li><a href="#week1">Week 1</a></li>
+		  			<li><a href="#week2">Week 2</a></li>
+		  			<li><a href="#week3">Week 3</a></li>
+		  			<li><a href="#week4">Week 4</a></li>
+		  		</ul>
+		  		</li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		<div class="jumbotron text-center" id="home">
+			<h1>Weekly Updates</h1>
+			<h3>Keep up with all of the progress being made!</h3>
+		</div>
+		<div class="container-fluid" id="week4">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Week 4</h1>
+					<h3>Continued Design and Prototyping</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 profile">
+					<img src="img/mock1.jpg" class="profile-img">
+				</div>
+				<div class="col-sm-8">
+					This week we installed and calibrated a new 3D printer in our lab space. The Ultimaker 2 is small table top printer that enables us to print PLA material prototypes. Building off of our design for foamcore, we estimated the needs we have for the PLA prototype.<br><br>
+					We mocked up our designs in the SolidWorks and began printing. We had hiccups and we found limitations in our printing softare, but we now have 2 full PLA prototypes and are waiting for motors 
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-gold" id="week3">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Week 3</h1>
+					<h3>Discussions and Foam Core</h3>
+				</div>
+			</div>
+			<div class="row">
+			<div class="col-sm-8">
+					<p>
+						Following up another week of little physical manifestation of progress, we decided to start cracking on a physical prototype. After analyzing some models we found in our readings and discussing the advantages and short-comings of each design we moved forward and quickly built a prototype. THe material used was quarter inch foam-core from which we fashioned 2 rings and a hand pad.<br><br>
+						By running a thin wire from the Distal Phalanx (tip of the finger) down through the Proximal Phalanx (the bone that connects the finger to the palm), then through a pad that covered the palm, we were able to test the reaction on a relaxed finger that existed, when tugged on in this configuration. We found that this design was extremely successful as seen in the video:
+					</p>
+				</div>
+				<div class="col-sm-4">
+					<video controls> 
+						<source src="img/foamcore.mp4" type="video/mp4">
+						Your browser does not support HTML5 video
+					</video> 
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" id="week2">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Week 2</h1>
+					<h3>MAG is born!</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 profile">
+					<img src="img/MAG_icon.png" class="profile-img">
+				</div>
+				<div class="col-sm-8">
+					<p>
+						Having moved into the new lab, we spent the remainder of the week setting up our work stations and filling out paper work to make sure everyone had access to the tools and equipment we needed.Following another short conversation with our mentors and advisors we began to do an analysis of finger models and diffrent existing methods of actuating finger motion. We drew some inspiration from the <a href="http://openhandproject.org">Open Hand Project</a> as prosthetic limb movement tackles a similar subspace of mechanical actuation problems as we do.<br><br>
+						We also came up with and framed our new logo! Introducing "MAGgy"!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-gold" id="week1">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Week 1</h1>
+					<h3>Moving in, Getting started.</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8">
+					<p>
+						This week was our first back on campus. We met with our adivsors and spoke briefly on the direction that we want to see the project progress in. We acknowledge that we still have an extensive amount of research to accomplish before we really begin to grasp the problem at hand.<br><br>
+						We spent most of the week look for documentation and academic research papers on topics pertaining to this project. It we agreed that this was to become an affordable everyday use system, not a reabilitative exercise machine, we also overviewed the demands this put on our system requirements. 
+					</p>
+				</div>
+				<div class="col-sm-4 profile">
+					<img src="img/516.jpg" class="profile-img">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="0">
+    	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    	<title>MAG Project</title>
+    	<link rel="icon" href="img/MAG_icon.png">
+
+
+    	<!-- Bootstrap -->
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="js/bootstrap.min.js"></script>
+	    <script src="http://maps.googleapis.com/maps/api/js"></script>
+	    <script type="text/javascript" src="js/scrolling.js"></script>
+	    <script type="text/javascript" src="js/sendmail.js"></script>
+		<script>
+
+			var myCenter = new google.maps.LatLng(37.000339, -122.063117);
+
+			function initialize() {
+				var mapProp = {
+					center:myCenter,
+					zoom:12,
+					scrollwheel:false,
+					draggable:false,
+					mapTypeId:google.maps.MapTypeId.ROADMAP
+				};
+
+				var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+				var marker = new google.maps.Marker({
+					position:myCenter,
+				});
+
+				marker.setMap(map);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+  	</head>
+  	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#home">MAG</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#home">Home</a></li>
+		        <li><a href="#project">Project</a></li>
+		        <li><a href="#about">About Us</a></li>
+		        <li><a href="#ack">Acknowledgements</a></li>
+		        <li><a href="#contact">Contact Us</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		<div class="jumbotron text-center" id="home">
+			<img src="img/MAG_icon.png">
+			<h1>Motor-Assistive Glove Project</h1>
+			<h3>Get a <strong>grasp</strong> on <strong>recovery</strong></h3>
+		</div>
+
+		<div class="container-fluid" id="project">
+  			<h1>The Project</h1>
+  			<h3>What Are We Doing?</h3> 
+  			<p>
+  			Every year more and more people have to gie up freedom, and autonomy in their lives becuase they have lost the ability to grasp objects. The deteriation of finger strength is an extensive problem that thousands of people must come to live with every year.
+  			<br>
+  			<br>
+  			Our goal at the Motor-Assistive Glove project (MAG) is create a new, affordable technology that will allow sufferers of this disability to regain control of their life, and potentially recover. We hope to design a glove that can be used for everyday use, so that our users can begin to recover, and strengthen or simply take back what they lost, liberty to do more by themselves.
+  			<br>
+  			<br>
+  			Stretching across the disciplines of mechanical design, high speen electronics, and controls, we hope to utilize new and existing technologies, to make an affordable solution to this problem, without sacrificing performance.
+  			</p>
+  			<a href="blog.html"><button class="btn btn-default btn-lg bg-gold">Check Out Weekly Updates</button></a>
+		</div>
+
+
+		<div class="container-fluid bg-gold" id="about">
+			<div class="row">
+				<div class="col-sm-12">
+  					<h1>About Us</h1>
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class = "col-sm-8">
+  					<h3><strong>Victor Ardulov</strong><br> Computer Engineering</h3> 
+  					<p class="bio">Raised in the heart of Silicon Valley, Victor has grew up with a passion for robotics and engineering. Specilizing in embedded programming and controls in college, Victor saw an opportunity to apply his education and skills to help people get better. With experience across all of the disciplines, Victor's stengths lie in the analysis and conception of software for control of the device.<br>
+  					<strong>Hobbies Include: </strong> Triathlons and hockey</p>
+  				</div>
+  				<div class = "col-sm-4 profile">
+  					<img src="img/victor.png" class="profile-img">
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class = "col-sm-4 profile">
+  					<img src="img/devin.png" class="profile-img">
+  				</div>
+  				<div class = "col-sm-8">
+  					<h3><strong>Devin Cody</strong><br> Electrical Engineering</h3> 
+  					<p class="bio">Originating from Los Angelos, Devin is an electrical engineering student. While studying EE, he gained a tremendous amount of experience with microcontroller system design as a result of minoring in computer engineering. Excited by the chance to use his senior year in college to make an impact in real people's lives, Devin applies his extensive knowledge in electronics design to guide the sensor and circuit implementation<br>
+  					<strong>Hobbies Include: </strong> Hiking, and volleyball</p>
+  				</div> 
+  			</div> 
+  			<div class="row">
+  				<div class = "col-sm-8">
+  					<h3><strong>Kyle Cordes</strong><br> Computer Engineering</h3> 
+  					<p class="bio">Also a Southern California native, Kyle brings a strong background in mechanics and statics to the team. With his own extensive background in programming, and embedded system desgin Kyle provides support for all aspects of the project extending his knowledge to circuit design, software impelementation, and mechanical modelling.<br>
+  					<strong>Hobbies Inlcude:</strong> Surfing and mountain biking</p>
+  				</div>
+  				<div class = "col-sm-4 profile">
+  					<img src="img/kyle.png" class="profile-img">
+  				</div>
+  			</div>
+		</div>
+
+		<div class="container-fluid" id="ack">
+			<div class = "row">
+				<div class="col-sm-12">
+					<h1>Acknowledgements</h1>
+					<h3>Thank Yous</h3>
+					<p>This project is an incredibly intense and complex system that we are designing and building. Aside for the tremendous effort needed to come up with the systems design and lay out, the prototyping phase can become quite expensive and tedious.
+					<br>
+					<br>
+					We are deeply grateful or the mentorship and wisedom passed on to us from the likes of Professor Patrick Mantey, and our teaching assistant Patrick Ayers. Your guidance, experience and insight has helped us unmeasurably. 
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 bio">
+					<p> We would also like to thank CITRIS, and the University of California, Santa Cruz, for providing space and support for our development. We look to change the world for the better and are delighted to have you lending a hand.</p>
+				</div>
+				<div class="col-sm-4 profile">
+					<img src="img/citris.png">
+				</div>
+			</div>			
+		</div>
+
+		<div class="container-fluid bg-gold" id="contact">
+  			<h1>Contact Us</h1>
+			<div class="row">
+				<div class="col-sm-5">
+  					<p>Contact us and we'll get back to you as soon as possilbe.</p>
+  					<p>
+  						<span class="glyphicon glyphicon-map-marker"></span>
+  						Engineering 2,<br>
+  						1156 High Street,<br>
+  						Santa Cruz, CA, US
+  					</p>
+  					<p>
+  						<span class="glyphicon glyphicon-envelope"></span>
+  						motorassistiveglove@gmail.com
+  					</p> 
+				</div>
+				<div class="col-sm-7">
+  					<div class="row">
+    					<div class="col-sm-6 form-group">
+      						<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+    					</div>
+    					<div class="col-sm-6 form-group">
+      						<input class="form-control" id="org" name="org" placeholder="Organization" type="text">
+    					</div>
+  					</div>
+  					<div class="row">
+  						<div class="col-sm-12 form-group">
+  							<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+  						</div>
+  					</div>
+  					<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+  					<br>
+  					<div class="row">
+    					<div class="col-sm-12 form-group">
+      						<button class="btn btn-default pull-right send-btn" type="submit">Send</button>
+    					</div>
+  					</div> 
+				</div>
+			</div>
+		</div>
+		<div id="googleMap" style="height:400px;width:100%;"></div>
+		<footer class="container-fluid text-center">
+			<a href="#myPage" title="To Top">
+    			<span class="glyphicon glyphicon-chevron-up"></span>
+  			</a>
+  			<p class="text-center">
+  				Webpage designed and implemented by Victor Ardulov.<br>
+  				Powered by jQuery and Bootstrap
+  			</p>
+		</footer>
+</html>
