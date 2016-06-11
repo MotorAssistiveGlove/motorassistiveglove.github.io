@@ -47,7 +47,7 @@
 		  			<li><a href="#week2">Week 2</a></li>
 		  			<li><a href="#week3">Week 3</a></li>
 		  			<li><a href="#week4">Week 4</a></li>
-		  			<li><a href="#week5">Week 5</a></li>
+		  			<li><a href="week510">Weeks 5 - 10</a></li>
 		  		</ul>
 		  		</li>
 		      </ul>
@@ -58,24 +58,63 @@
 			<h1>Weekly Updates</h1>
 			<h3>Keep up with all of the progress being made!</h3>
 		</div>
-		<div class="container-fluid bg-gold" id="week5">
+		<div class="row">
+				<div class="col-sm-4 profile">
+					<img src="img/mock1.jpg" class="profile-img">
+				</div>
+				<div class="col-sm-8">
+					This week we installed and calibrated a new 3D printer in our lab space. The Ultimaker 2 is small table top printer that enables us to print PLA material prototypes. Building off of our design for foamcore, we estimated the needs we have for the PLA prototype.<br><br>
+					We mocked up our designs in the SolidWorks and began printing. We had hiccups and we found limitations in our printing softare, but we now have 2 full PLA prototypes and are waiting for motors 
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-gold" id="week510">
 			<div class="row">
 				<div class="col-sm-12">
-					<h1>Week 5</h1>
-					<h3>Motors and Motion</h3>
+					<h1>Weeks 5 - 10</h1>
+					<h3>The End of Winter Quarter</h3>
 				</div>
 			</div>
 			<div class="row">
 			<div class="col-sm-8">
 					<p>
-						On the hunt for motors to continue our prototyping process, we made the drive over CA-17 to San Jose's premiere electronics, and hardware store, HSC. Unfortunately, we happened to make there the exact day that HSC was moving locations and as a result were closed. A quick tour around the other local area electronics shops, proved to end fruitlessily, and following some comforting In-n-Out burgers, and a heavy sigh we returned to Santa Cruz empty handed.<br><br>
-						We once again turned to the Open Hand project and attempted to identify the parts that they used for their finger actuation. We found similar motors on Amazon that were gauranteed to ship Prime, and subitted the order. In the mean time we looked into different ideas of using the motor, ultimately deciding on a wire on a spool method. Upon recieving the motor in the mail, time was spent designing a fitting spool, and a mount that would hold the motor and guide our wire.<br><br>
-						Eventually we were able to curl up one finger using the spool and motor mount we ordered and used. This is a huge result, as we have now verified our motion model, and can now progress further into the subject of specifics of the actuation model, and looking into sensors that we plan on using.<br><br>
-						<strong>Mock 1 Prototype in Action:</strong>
+						As a result of the sheer amount of time all of us were putting into the project itself, as well as making sure that all of us were simultaneously staying on track to graduate, updating the blog has become a back-burner priority. And instead of acting like these updates have been coming all the time, from here on out the posts will simply be back-logged a little and a condesnsed discussion of the different challenges and solutions we generated.
+						<br>
+						<br>
+						So without further ado, this is the progress we made at the end of the winter quarter:
+						<ul>
+							<li>
+								We made our way around a number of hobby, and reused electronics stores. We were in search of motors and linear actuators to test our mechanical motion design. Unfortunately, everything was found to either be closed or out of business. Upon arriving back in Santa Cruz, we decided to bite the bullet and <a href="https://www.amazon.com/300RPM-Torque-Electric-Geared-Motor/dp/B0080DL25Q">buy a motor on Amazon</a>, and just wait for it to come in.
+							</li>
+							<li>
+								We began designing the most basic of control algorithms. It was naive and a relied on everything working perfectly. It will have to be redesigned.
+							</li>
+							<li>
+								We moved away from using a spring (Spring don't really care about deflection, only stretchng) and instead we repurposed elastic bands. This required a complete redesign of the top part of the hand.
+							</li>
+							<li>
+								We realized that the piece on the finger tip was sliding around too much, we redesigned it to incorporate a more "thimble" like design. This kept the piace mounted and the sensor protected.
+							</li>
+							<li>
+								A wrist splint was bought to lock the wrist in position, our motor proved to slightly over torqued. It would bend the wrist if the motor was on for too long. Cable routing used to protect break cables, was used to protect the wrist gaurd from the steel cable we decided to use.
+							</li>
+							<li>
+								A spool was designed to wrap cable onto it, and actually curl the finger.
+							</li>
+							<li>
+								Flex sensors were incorportated a indivators of full curl, relaxation, or obstruction that cause the motor to stall. 
+							</li>
+							<li>
+								We completed a very rough prototype of a single finger. It didn't work very well.
+							</li>
+						</ul>
 					</p>
 				</div>
 				<div class="col-sm-4">
-					<strong class="text-center">Video Coming</strong>
+					<img src="img/WinterQuarterInitialPrototype.jpg" class="profile-img" style="width:100%;">
+					<div style="width:100%;text-align:center;">What we had around week 6.</div>
+					<img src="img/WinterQuarterFinalPrototype.jpg" class="profile-img" style="width:100%;">
+					<div style="width:100%;text-align:center;">What we finished the Quarter with.</div>
 				</div>
 			</div>
 		</div>
@@ -106,7 +145,7 @@
 			<div class="row">
 			<div class="col-sm-8">
 					<p>
-						Following up another week of little physical manifestation of progress, we decided to start cracking on a physical prototype. After analyzing some models we found in our readings and discussing the advantages and short-comings of each design we moved forward and quickly built a prototype. The material used was quarter inch foam-core from which we fashioned 2 rings and a hand pad.<br><br>
+						Following up another week of little physical manifestation of progress, we decided to start cracking on a physical prototype. After analyzing some models we found in our readings and discussing the advantages and short-comings of each design we moved forward and quickly built a prototype. THe material used was quarter inch foam-core from which we fashioned 2 rings and a hand pad.<br><br>
 						By running a thin wire from the Distal Phalanx (tip of the finger) down through the Proximal Phalanx (the bone that connects the finger to the palm), then through a pad that covered the palm, we were able to test the reaction on a relaxed finger that existed, when tugged on in this configuration. We found that this design was extremely successful as seen in the video:
 					</p>
 				</div>
